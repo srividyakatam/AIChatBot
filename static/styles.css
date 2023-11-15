@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+#chatbox {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #e9e9e9;
+  margin-bottom: 10px;
+}
+
+.user-message, .bot-message {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  clear: both;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #f1f0f0;
+  text-align: left;
+}
+
+#userQuery {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 90px);
+  margin-right: 10px;
+}
+
+#submitQuery {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.export-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding inside the button */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block layout */
+    font-size: 16px; /* Text size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    transition-duration: 0.4s; /* Smooth transition for hover effect */
+}
+
+.export-button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+
+#exportButtonContainer {
+    text-align: center; /* Center align the button */
+    padding: 20px; /* Padding around the container */
+    /* Add more styles as needed */
+}

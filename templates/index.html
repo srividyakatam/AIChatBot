@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chatbot</title>
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+</head>
+<body>
+
+<div class="chat-container">
+  <div id="chatbox">
+    <!-- Messages will be displayed here -->
+  </div>
+  <input type="text" id="userQuery" placeholder="Type your message here..." autocomplete="off">
+  <button id="submitQuery">Send</button>
+</div>
+
+<div id="exportButtonContainer">
+    <button class="export-button" onclick="window.location.href='/export-chat'">Export Chat</button>
+</div>
+
+<script>
+
+  window.onload = function() {
+    fetch('/clear-chat')
+    .then(response => response.text())
+    .then(data => console.log(data));
+    };
+
+  document.getElementById('submitQuery').addEventListener('click', sendMessage);
+
+  document.getElementById('userQuery').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  });
+
+  function sendMessage() {
+    let userMessage = document.getElementById('userQuery').value;
+    if (!userMessage.trim()) return; // Prevents sending empty messages
+
+    let chatbox = document.getElementById('chatbox');
+    chatbox.innerHTML += `<div class="user-message">${userMessage}</div>`;
+
+    fetch('/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({message: userMessage})
+    })
+    .then(response => response.json())
+    .then(data => {
+      chatbox.innerHTML += `<div class="bot-message">${data.message}</div>`;
+      chatbox.scrollTop = chatbox.scrollHeight; // Scroll to latest message
+    });
+
+    document.getElementById('userQuery').value = ''; // Clear input field
+  }
+</script>
+
+</body>
+</html>
