@@ -1,16 +1,13 @@
 # Application Overview
-Project Title: AI-Powered Chatbot
-Technology Stack: Python, Flask, HTML, CSS, JavaScript, SQLite, OpenAI's GPT-3
+Project Title: Multilingual Customer Service Chatbot
+Technology Stack: Python, Flask, Flask-Session, HTML, CSS, JavaScript, jQuery, SQLite, OpenAI's GPT-3
 ## Application Purpose
-Developed an innovative AI-powered chatbot designed to simulate a customer service 
-representative, leveraging OpenAI's GPT-3 for advanced natural language processing. This project 
-showcases the integration of cutting-edge AI within a web application, demonstrating my proficiency 
-in both front-end and back-end development.
+This project involves the development of an advanced, multilingual customer service chatbot. Utilizing OpenAI's GPT-3 for natural language processing, the chatbot is designed to handle various customer queries with different personalities and in multiple languages. The application is structured to be adaptable, allowing for the integration of additional contexts and features.
 ## Key Features
-- GPT-3 Integration: Utilizes OpenAI's GPT-3 model to generate accurate and contextually relevant responses, ensuring a high-quality user interaction experience.
-- Interactive Chat Interface: Features a user-friendly interface, styled with HTML and CSS, offering an intuitive chat experience akin to modern messaging platforms.
-- Session Management: Implements Flask session management to handle individual user interactions, providing a personalized experience for each session.
-- Dynamic Interaction Logging: Integrates a SQLite database to log chat interactions, capturing user queries and bot responses in a session-specific manner.
-- Export Functionality: Allows users to export their chat history as a text file, providing a record of their interaction with the AI chatbot.
-- Responsive Design: Ensures a seamless experience across various devices and screen sizes, thanks to thoughtful front-end design.
-- Customizable and Scalable: Designed to be easily adaptable and scalable, accommodating additional  features like voice input or multilingual support.
+- Contextual Responses: The chatbot can operate in different contexts like a Travel Planner, Pre-School Math Teacher, and Recipe Generator.
+- Personality Selection: Users can choose from various personalities for the chatbot, including Professional, Friendly, Humorous, and Empathetic.
+- Multilingual Support: The chatbot can respond in multiple languages, enhancing its accessibility and usability for a diverse user base.
+- Prompt Logging: The application logs prompts sent to the GPT API, displaying them on the UI for transparency and learning purposes.
+- Export Functionality: Users can export the chat history and prompt logs, providing a record of interactions.
+- UI Customization: The application features a user-friendly interface with customizable elements like dropdown menus for context and personality selection.
+- Session Management: Each user session is unique, ensuring personalized interactions and security.

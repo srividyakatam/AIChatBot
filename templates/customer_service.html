@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}AI Chatbot{% endblock %}
+
+{% block content %}
+<input type="hidden" id="serviceType" value="customer_service">
+<div class="main-content">
+    <div class="container">
+        <div class="left-section">
+            <!-- Context Dropdown -->
+            <div class="dropdown-section">
+                <h3>Context</h3>
+                {% include 'context-selector.html' %}
+            </div>
+
+            <!-- Personality Dropdown -->
+            <div class="dropdown-section">
+                <h3>Personality</h3>
+                {% include 'personality-selector.html' %}
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown-section">
+                <h3>Response Language</h3>
+                {% include 'language-selector.html' %}
+            </div>
+            <!-- Additional options can be added here -->
+        </div>
+    
+        <div class="middle-section">
+            <!-- Chatbot UI and functionalities -->
+            <div class="chat-container">
+                <div id="chatbox">
+                    <!-- Messages will be displayed here -->
+                </div>
+                <input type="text" id="userQuery" placeholder="Type your message here..." autocomplete="off">
+                <button id="submitQuery">Send</button>
+            </div>
+            
+            <div id="exportButtonContainer">
+                <button id="exportButton" class="export-button">Export Chat</button>
+            </div>
+            <!-- Additional functionalities like text-to-speech button, sentiment chart, etc. -->
+        </div>
+    
+        <div class="right-section">
+            <div id="promptLog">
+                <!-- Prompts will be displayed here -->
+            </div>
+            <div id="exportPromptButtonContainer">
+                <button id="exportPromptButton" class="export-button">Export Prompts</button>
+            </div>            
+        </div>
+    </div>
+</div>
+{% endblock %}
