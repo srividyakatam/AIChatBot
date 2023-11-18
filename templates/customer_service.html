@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}AI Chatbot{% endblock %}
+{% block title %}Customer Service Chatbot{% endblock %}
 
 {% block content %}
 <input type="hidden" id="serviceType" value="customer_service">
@@ -36,10 +36,6 @@
                 <input type="text" id="userQuery" placeholder="Type your message here..." autocomplete="off">
                 <button id="submitQuery">Send</button>
             </div>
-            
-            <div id="exportButtonContainer">
-                <button id="exportButton" class="export-button">Export Chat</button>
-            </div>
             <!-- Additional functionalities like text-to-speech button, sentiment chart, etc. -->
         </div>
     
@@ -49,8 +45,14 @@
             </div>
             <div id="exportPromptButtonContainer">
                 <button id="exportPromptButton" class="export-button">Export Prompts</button>
+            </div>
+            
+            <div id="exportButtonContainer">
+                <button id="exportButton" class="export-button">Export Chat</button>
             </div>            
         </div>
     </div>
 </div>
+
+<script src="{{ url_for('static', filename='js/customer_service.js') }}"></script>
 {% endblock %}

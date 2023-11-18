@@ -26,7 +26,7 @@ $(document).ready(function() {
         chatbox.innerHTML += `<div class="user-message">${userMessage}</div>`;
         
     
-        fetch('/chat', {
+        fetch('/customer_service_chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ $(document).ready(function() {
       document.getElementById('exportButton').addEventListener('click', exportChat);
       function exportChat() {
         let serviceType = document.getElementById('serviceType').value; // Get the service type
-        window.location.href = `/export-chat/${serviceType}`;
+        window.location.href = `/customer_service_export-chat/${serviceType}`;
     }
     
     function updatePromptLog(promptText) {
@@ -108,7 +108,7 @@ $(document).ready(function() {
 
     document.getElementById('exportPromptButton').addEventListener('click', function() {
       let serviceType = document.getElementById('serviceType').value;
-      window.location.href = `/export-prompts/${serviceType}`;  });
+      window.location.href = `/customer_service_export-prompts/${serviceType}`;  });
   
 
   

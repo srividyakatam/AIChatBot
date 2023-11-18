@@ -1,16 +1,9 @@
 /*Base Template Styling*/
 header {
   text-align: center;
-  padding: 5px 0; /* Reduced padding */
   background-color: #f8f8f8;
   border-bottom: 1px solid #e7e7e7;
   font-size: 1.2em; /* Adjust font size if needed */
-}
-
-.main-content {
-  margin-top: 60px; /* Adjust as needed */
-  margin-bottom: 60px; /* Adjust as needed */
-  /* Other styles... */
 }
 
 .horizontal-menu {
@@ -37,35 +30,8 @@ header {
   background-color: #111;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 5px 0; /* Reduced padding */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-size: 0.9em; /* Adjust font size if needed */
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-}
-
 body {
   font-family: Arial, sans-serif;
-  padding-bottom: 70px; /* Adjust so the footer doesn't overlap content */
 }
 
 /*ChatBot Template Styling*/
@@ -227,11 +193,6 @@ body {
     background-color: #45a049; /* Darker shade of green on hover */
 }
 
-#exportButtonContainer {
-    text-align: center; /* Center align the button */
-    padding: 20px; /* Padding around the container */
-    /* Add more styles as needed */
-}
 
 /*Drop down menu Styling*/
 .select-dropdown {

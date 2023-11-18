@@ -11,27 +11,16 @@
 </head>
 <body>
     <header>
-        <h1>Prompt Engineering Applications</h1>
+        <h1>Prompt Engineering Chatbot Applications</h1>
     </header>
     <nav>
         <ul class="horizontal-menu">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('customer_service') }}">Customer Service Chatbot</a></li>
-            <li><a href="{{ url_for('product_description') }}">Product Description Writer</a></li>
             <!-- Add more chatbot links as needed -->
         </ul>
     </nav>
 
     {% block content %}{% endblock %}
-
-    <footer>
-        <ul class="footer-links">
-            <li><a href="{{ url_for('about_me') }}">About Me</a></li>
-            <li><a href="{{ url_for('terms_of_service') }}">Terms of Service</a></li>
-            <li><a href="{{ url_for('privacy_statement') }}">Privacy Statement</a></li>
-        </ul>
-    </footer>
-
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
