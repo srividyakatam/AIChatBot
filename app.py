@@ -23,9 +23,9 @@ def init_db():
 
 init_db()
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "your-api-key"
 # Secret key for session management
-app.config['SECRET_KEY'] = '40524b102b7aff5d1a8e86544a0de61d'
+app.config['SECRET_KEY'] = 'your-secret-key'
 # Configure session to use filesystem (instead of signed cookies)
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['SESSION_PERMANENT'] = False
