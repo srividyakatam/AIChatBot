@@ -93,7 +93,10 @@ body {
 }
 
 /* Additional styling for chat messages and other elements */
-
+.exportButtonMiddle {
+  text-align: center;
+  padding: 20px;
+}
 
 .right-section {
   flex: 1; 

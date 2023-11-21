@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block title %}Educational Tutor Bot{% endblock %}
+
+{% block content %}
+<input type="hidden" id="serviceType" value="educational_tutor">
+<div class="main-content">
+    <div class="container">
+        <div class="left-section">
+            <!-- Subject Dropdown -->
+            <div class="dropdown-section">
+                <h4>Subject</h4>
+                <select id="subjectSelector" class="select-dropdown">
+                    <option value="">General</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                </select>
+            </div>          
+            <!-- Personality Dropdown -->
+            <div class="dropdown-section">
+                <h4>Personality</h4>
+                <select id="eduPersonality" class="select-dropdown">
+                    <option value="">Default</option>
+                    <option value="patient">Patient</option>
+                    <option value="knowledgeable">Knowledgeable</option>
+                    <option value="approachable">Approachable</option>
+                    <option value="encouraging">Encouraging</option>
+                </select>
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown-section">
+                <h4>Response Language</h4>
+                {% include 'language-selector.html' %}
+            </div>
+            <!-- Setting Dropdown -->
+            <div class="dropdown-section">
+                <h4>Setting</h4>
+                <select id="settingSelector" class="select-dropdown">
+                    <option value="">Default</option>
+                    <option value="elementaryschool">Elementary</option>
+                    <option value="middleschool">Middle School</option>
+                    <option value="highschool">High Scool</option>
+                    <option value="university">University</option>
+                    <option value="lifelong">Lifelong Learners</option>
+                </select>
+            </div>
+            <!-- Subject Level Dropdown -->
+            <div class="dropdown-section">
+                <h4>Level of Complexity</h4>
+                <select id="subjectLevel" class="select-dropdown">
+                    <option value="">Default</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="middle-section">
+            <!-- Chatbot UI and functionalities -->
+            <div class="chat-container">
+                <div id="chatbox">
+                    <!-- Messages will be displayed here -->
+                </div>
+                <input type="text" id="userQuery" placeholder="Type your message here..." autocomplete="off">
+                <button id="submitQuery">Send</button>
+            </div>
+            <div id="exportButtonContainer" class="exportButtonMiddle">
+                <button id="exportButton" class="export-button">Export Chat</button>
+            </div>
+        </div>
+    
+        <div class="right-section">
+            <h4>Exact Prompts Sent to GPT-3 API</h4>
+            <div id="promptLog">
+                <!-- Prompts will be displayed here -->
+            </div>
+            <div id="exportPromptButtonContainer">
+                <button id="exportPromptButton" class="export-button">Export Prompts</button>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/educational_tutor.js') }}"></script>
+{% endblock %}

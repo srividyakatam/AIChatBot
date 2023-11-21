@@ -1,0 +1,6 @@
+User: how did Covid-19 impacted world economy?
+Bot: A: The economic impact of Covid-19 has been widespread and devastating. The pandemic has led to a significant decrease in global trade, a decrease in global GDP, and widespread unemployment.
+
+User: how did it impact IT industry?
+Bot: The Industrial Revolution impacted the IT industry by transforming economies from agrarian to industrial, leading to technological innovations, urbanization, and significant social changes.
+

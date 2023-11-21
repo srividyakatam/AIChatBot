@@ -1,0 +1,27 @@
+User: Plan a trip to England for 5 people
+Bot: Here are the requirements:
+
+1. Start and end in London
+2. Include a visit to Windsor Castle
+3. Include a 2-night stay in the Lake District
+4. Include a visit to a small town or village
+5. Things to do should focus on nature and/or exploring different cultures
+
+Assuming you would like an itinerary for a 5-day trip starting and ending in London: 
+
+Day 1: 
+
+Arrive in London and check into your hotel. In the afternoon, visit Windsor Castle, one of the official residences of the British royal family. 
+
+Day 2: 
+
+Spend the day exploring London. Some suggested activities include visiting Buckingham Palace, the Tower of London, and walking across Tower Bridge. In the evening, enjoy a traditional English dinner at a pub. 
+
+Day 3: 
+
+Travel north to the Lake District and check into your hotel. Spend the afternoon hiking in the beautiful Lake District scenery. 
+
+Day 4: 
+
+Explore a small town or village in the Lake District, such as Keswick or Ambleside. In the afternoon, go for a boat ride on one of the lakes, such as Wind
+

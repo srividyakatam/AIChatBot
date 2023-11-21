@@ -52,20 +52,19 @@
                 <input type="text" id="userQuery" placeholder="Type your message here..." autocomplete="off">
                 <button id="submitQuery">Send</button>
             </div>
-            <!-- Additional functionalities like text-to-speech button, sentiment chart, etc. -->
+            <div id="exportButtonContainer" class="exportButtonMiddle">
+                <button id="exportButton" class="export-button">Export Chat</button>
+            </div> 
         </div>
     
         <div class="right-section">
+            <h4>Exact Prompts Sent to GPT-3 API</h4>
             <div id="promptLog">
                 <!-- Prompts will be displayed here -->
             </div>
             <div id="exportPromptButtonContainer">
                 <button id="exportPromptButton" class="export-button">Export Prompts</button>
-            </div>
-            
-            <div id="exportButtonContainer">
-                <button id="exportButton" class="export-button">Export Chat</button>
-            </div>            
+            </div>           
         </div>
     </div>
 </div>
