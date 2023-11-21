@@ -10,13 +10,29 @@
             <!-- Context Dropdown -->
             <div class="dropdown-section">
                 <h3>Context</h3>
-                {% include 'context-selector.html' %}
+                <div class="select-container">
+                    <select id="context-selector" class="select-dropdown">
+                        <option value="">Default</option>
+                        <option value="customer_service_agent">Customer Serive Agent</option>
+                        <option value="travel_planner">Travel Planner</option>
+                        <option value="math_teacher">Pre-School Math Teacher</option>
+                        <option value="recipe_generator">Recipe Generator</option>
+                    </select>
+                    </div>
             </div>
 
             <!-- Personality Dropdown -->
             <div class="dropdown-section">
                 <h3>Personality</h3>
-                {% include 'personality-selector.html' %}
+                <div class="select-container">
+                    <select id="personality-selector" class="select-dropdown">
+                        <option value="">Default</option>
+                        <option value="professional">Professional</option>
+                        <option value="friendly">Friendly</option>
+                        <option value="humorous">Humorous</option>
+                        <option value="empathetic">Empathetic</option>
+                    </select>
+                    </div>
             </div>
 
             <!-- Language Dropdown -->
